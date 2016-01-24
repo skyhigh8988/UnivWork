@@ -1,0 +1,5 @@
+#Thu Jun 10 04:40:02 CST 2010
+eclipse.preferences.version=1
+pkg_autoversion=true
+pkg_use_project=true
+preverify_config_value=CLDC-1.0

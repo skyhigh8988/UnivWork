@@ -1,0 +1,16 @@
+add 97213001 5
+add 97213002 5
+add 97213003 5
+add 老師1 3
+add 老師2 3
+add 老人家1 1
+get
+get
+get
+get
+add 97213004 5
+add 老人家2 1
+get
+get
+get
+get

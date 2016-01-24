@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bitmap Editor", "Bitmap Editor\Bitmap Editor.vcproj", "{C4B0BE38-B964-4B48-93D0-1B282E20DE0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4B0BE38-B964-4B48-93D0-1B282E20DE0C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C4B0BE38-B964-4B48-93D0-1B282E20DE0C}.Debug|Win32.Build.0 = Debug|Win32
+		{C4B0BE38-B964-4B48-93D0-1B282E20DE0C}.Release|Win32.ActiveCfg = Release|Win32
+		{C4B0BE38-B964-4B48-93D0-1B282E20DE0C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

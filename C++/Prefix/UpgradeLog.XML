@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Prefix">
+</Property><Property Name="方案檔" Value="C:\Users\Eraser\Other\C++ Project\Prefix\Prefix.sln">
+</Property><Property Name="使用者選項檔" Value="C:\Users\Eraser\Other\C++ Project\Prefix\Prefix.suo">
+</Property><Property Name="Date" Value="2012年6月5日">
+</Property><Property Name="Time" Value="下午 13:31">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Prefix.sln" Description="檔案已成功備份為 C:\Users\Eraser\Other\C++ Project\Prefix\Prefix.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="Prefix.suo" Description="檔案已成功備份為 C:\Users\Eraser\Other\C++ Project\Prefix\Prefix.suo.old">
+</Event><Event ErrorLevel="0" Project="Prefix" Source="Prefix\Prefix.vcproj" Description="Converting project file 'C:\Users\Eraser\Other\C++ Project\Prefix\Prefix\Prefix.vcproj'.">
+</Event><Event ErrorLevel="1" Project="Prefix" Source="Prefix\Prefix.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="Prefix" Source="Prefix\Prefix.vcproj" Description="Done converting to new project file 'C:\Users\Eraser\Other\C++ Project\Prefix\Prefix\Prefix.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="Prefix" Source="Prefix\Prefix.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Prefix.sln" Description="方案轉換成功">
+</Event><Event ErrorLevel="3" Project="" Source="Prefix.sln" Description="Converted">
+</Event></UpgradeLog>

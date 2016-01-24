@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------
+[10/19/10 22:29:48] Server: "Test03(91458853 bytes)" start transfer.
+[10/19/10 22:30:04] Server: Transfer complete.
+-------------------------------------------------------------------------
+Server:       127.0.0.1:4321
+File Name:    Test03
+File Size:    91458853 bytes
+Cost:         15156 millisecond
+Package:      357262 (256 bytes/1 packages)
+RTT Avg:      0.0305714 millisecond
+Throughput:   6034.5 bytes/millisecond
+-------------------------------------------------------------------------

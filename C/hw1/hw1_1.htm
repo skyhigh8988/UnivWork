@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>hw1_1.htm</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="SynEdit HTML exporter" />
+<style type="text/css">
+<!--
+body { color: #000000; background-color: #FFFFFF; }
+.cpp1-assembler { color: #0000FF; }
+.cpp1-character { color: #000000; }
+.cpp1-comment { color: #3399FF; font-style: italic; }
+.cpp1-float { color: #800080; }
+.cpp1-hexadecimal { color: #800080; }
+.cpp1-identifier { color: #000000; }
+.cpp1-illegalchar { color: #000000; }
+.cpp1-number { color: #800080; }
+.cpp1-octal { color: #800080; }
+.cpp1-preprocessor { color: #008000; }
+.cpp1-reservedword { color: #000000; font-weight: bold; }
+.cpp1-space { background-color: #FFFFFF; color: #000000; }
+.cpp1-string { color: #FF0000; }
+.cpp1-symbol { color: #000000; }
+-->
+</style>
+</head>
+<body>
+<pre>
+<code><span style="font: 10pt Courier New;"><span class="cpp1-comment">/*
+ * Server : B2
+ * 學號   : F74976120
+ * 姓名   : 李睿哲 
+ * 編譯   : gcc -o hw1_1 hw1_1.c
+ * 執行   : ./hw1_1 (./hw1_1 < data)
+ * 功能   : 計算平均值 (Chapter 1 Exercise 15) 
+ * 日期   : 2008/10/07 
+ */
+</span><span class="cpp1-space"> 
+</span><span class="cpp1-comment">/*
+ * 程式執行原理:
+ *  
+ * avg_ori=原平均 ; avg_new=新平均
+ * sum_ori=原總和 ; sum_new=新總和
+ * 
+ * avg_new = avg_ori + (x - avg_ori) / i
+ *         = (avg_ori * i + (x - avg_ori)) / i
+ *         = (avg_ori * (i - 1) + x) / i
+ *         = (sum_ori + x) / i
+ *         = sum_new / i
+ *
+ * avg = avg + (x - avg) / i = sum / i = navg 
+ * 
+ */</span><span class="cpp1-space"> 
+
+</span><span class="cpp1-preprocessor">#include &lt;stdio.h&gt;
+
+</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> main(</span><span class="cpp1-reservedword">void</span><span class="cpp1-symbol">)
+{
+    </span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> i;
+    </span><span class="cpp1-reservedword">double</span><span class="cpp1-space"> x,avg = </span><span class="cpp1-float">0.0</span><span class="cpp1-symbol">, navg, sum = </span><span class="cpp1-float">0.0</span><span class="cpp1-symbol">;
+    
+    </span><span class="cpp1-comment">//列印表頭至螢幕
+</span><span class="cpp1-space">    printf(</span><span class="cpp1-string">&quot;%5s%17s%17s%17s\n%5s%17s%17s%17s\n\n&quot;</span><span class="cpp1-symbol">, </span><span class="cpp1-string">&quot;Count&quot;</span><span class="cpp1-symbol">, </span><span class="cpp1-string">&quot;Item&quot;</span><span class="cpp1-symbol">, </span><span class="cpp1-string">&quot;Average&quot;</span><span class="cpp1-symbol">, 
+        </span><span class="cpp1-string">&quot;Naive avg&quot;</span><span class="cpp1-symbol">, </span><span class="cpp1-string">&quot;-----&quot;</span><span class="cpp1-symbol">, </span><span class="cpp1-string">&quot;----&quot;</span><span class="cpp1-symbol">, </span><span class="cpp1-string">&quot;-------&quot;</span><span class="cpp1-symbol">, </span><span class="cpp1-string">&quot;---------&quot;</span><span class="cpp1-symbol">);
+    
+    </span><span class="cpp1-comment">//將輸入值計算總和及平均並列印至螢幕直到輸入值不是數字
+</span><span class="cpp1-space">    </span><span class="cpp1-reservedword">for</span><span class="cpp1-space"> (i = </span><span class="cpp1-number">1</span><span class="cpp1-symbol">; scanf(</span><span class="cpp1-string">&quot;%lf&quot;</span><span class="cpp1-symbol">, &amp;x) == </span><span class="cpp1-number">1</span><span class="cpp1-symbol">; i++) {
+        avg += (x - avg) / i;
+        sum += x;
+        navg = sum / i;
+        printf(</span><span class="cpp1-string">&quot;%5d%17e%17e%17e\n&quot;</span><span class="cpp1-symbol">, i, x, avg, navg);
+    }
+    
+    </span><span class="cpp1-reservedword">return</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+}
+
+</span></span>
+</code></pre>
+</body>
+</html>
